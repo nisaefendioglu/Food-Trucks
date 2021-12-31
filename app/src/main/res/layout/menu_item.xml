@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:background="@drawable/hamburger"
+        android:foreground="@drawable/rounded_fg"
         android:layout_marginTop="15dp"/>
 
     <TextView
@@ -32,14 +30,20 @@
         android:text="Food Desc"
         android:layout_marginTop="15dp"/>
 
+    <TextView
+        android:id="@+id/youtube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Desc"
+        android:layout_marginTop="15dp"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/radius"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Recipe 👩‍🍳"
         android:textAllCaps="false" />
 
 </LinearLayout>
-</androidx.cardview.widget.CardView>
