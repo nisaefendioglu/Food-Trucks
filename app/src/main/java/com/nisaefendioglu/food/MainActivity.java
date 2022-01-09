@@ -30,25 +30,12 @@ public class MainActivity extends AppCompatActivity {
     List<Meals.Items> MealsList = new ArrayList<>();
     Adapter adapter;
     RecyclerView recyclerview;
-    Button recipe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerview = findViewById(R.id.recyclerview);
-
-        recipe = (Button) findViewById(R.id.recipe);
-
-        /* recipe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://nisaefendioglu.blog/"));
-                startActivity(intent);
-            }
-        }); */
-
 
         adapter = new com.nisaefendioglu.food.adapter.Adapter(this, MealsList);
         recyclerview.setAdapter(adapter);

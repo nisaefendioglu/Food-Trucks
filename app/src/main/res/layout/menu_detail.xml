@@ -4,20 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:background="@drawable/hamburger"
-        android:foreground="@drawable/rounded_fg"
-        android:layout_marginTop="15dp"/>
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/swipe"></ImageButton>
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="5dp"
         android:gravity="center"
         android:textColor="@color/purple_700"
@@ -30,28 +27,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Food Desc"
-        android:maxLines="10"
         android:textColor="@color/black"
         android:textSize="15dp"
         android:layout_margin="10dp"/>
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/chef"></ImageView>
+
     <TextView
-        android:id="@+id/readmore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Read More 📝"
-        android:textColor="@color/purple_500"
-        android:textStyle="bold"
-        android:layout_marginRight="10dp"></TextView>
-    <Button
-        android:id="@+id/recipe"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:background="@drawable/radius"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:text="Recipe 👩‍🍳"
-        android:textAllCaps="false" />
+        android:layout_marginTop="5dp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/purple_500"
+        android:text="Enjoy Your Meal!"></TextView>
+
 
 </LinearLayout>

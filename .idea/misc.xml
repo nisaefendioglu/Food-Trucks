@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/search.xml" value="0.21574074074074073" />
+        <entry key="app/src/main/res/drawable/ic_baseline_chevron_left_24.xml" value="0.2553846153846154" />
         <entry key="app/src/main/res/drawable/radius.xml" value="0.23148148148148148" />
         <entry key="app/src/main/res/drawable/rounded_fg.xml" value="0.17407407407407408" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/menu_detail.xml" value="0.335" />
         <entry key="app/src/main/res/layout/menu_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/splash_screen.xml" value="0.14447463768115942" />
       </map>
