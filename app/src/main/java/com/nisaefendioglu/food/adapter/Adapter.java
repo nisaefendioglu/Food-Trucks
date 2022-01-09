@@ -1,9 +1,12 @@
 package com.nisaefendioglu.food.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -38,8 +41,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         Adapter.ViewHolder viewHolder = holder;
         viewHolder.name.setText(items.get(position).getStrMeal());
         viewHolder.desc.setText(items.get(position).getStrInstructions());
-        viewHolder.youtube.setText(items.get(position).getStrYoutube());
         Glide.with(holder.itemView).load(items.get(position).getStrMealThumb()).into(viewHolder.img);
+        viewHolder.recipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(items.get(position).getStrYoutube()));
+                v.getContext().startActivity(intent);
+            }
+        });
 
     }
 
@@ -51,7 +61,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
    class  ViewHolder extends RecyclerView.ViewHolder{
 
         ImageView img;
-        TextView name,desc,youtube;
+        TextView name,desc;
+        Button recipe;
 
        public ViewHolder(@NonNull View itemView) {
            super(itemView);
@@ -59,7 +70,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
            img = itemView.findViewById(R.id.img);
            name = itemView.findViewById(R.id.name);
            desc = itemView.findViewById(R.id.desc);
-           youtube = itemView.findViewById(R.id.youtube);
+           recipe = itemView.findViewById(R.id.recipe);
        }
    }
 }
