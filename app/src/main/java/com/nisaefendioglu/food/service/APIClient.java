@@ -1,6 +1,7 @@
 package com.nisaefendioglu.food.service;
 
 import okhttp3.OkHttpClient;
+import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -15,5 +16,6 @@ public class APIClient {
                         .client(new OkHttpClient());
         Retrofit retrofit = builder.build();
         return retrofit.create(serviceClass);
+
     }
 }

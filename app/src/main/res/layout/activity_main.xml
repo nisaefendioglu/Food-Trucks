@@ -55,6 +55,7 @@
             tools:layout_editor_absoluteY="80dp" />
 
         <EditText
+            android:id="@+id/search_view"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
@@ -62,6 +63,7 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             tools:layout_editor_absoluteX="130dp"
+            app:queryHint="chicken..."
             tools:layout_editor_absoluteY="80dp" />
 
     </LinearLayout>
