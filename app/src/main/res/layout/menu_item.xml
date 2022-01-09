@@ -18,7 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
         android:gravity="center"
+        android:textColor="@color/purple_700"
         android:textStyle="bold"
         android:textSize="20dp"
         android:text="Food Name"/>
@@ -28,21 +30,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Food Desc"
-        android:layout_marginTop="15dp"/>
+        android:maxLines="8"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_margin="10dp"/>
 
     <TextView
         android:id="@+id/youtube"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Food Desc"
-        android:layout_marginTop="15dp"/>
+        android:textColor="@color/purple_500"
+        android:layout_margin="10dp"/>
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="@drawable/radius"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="Recipe 👩‍🍳"
         android:textAllCaps="false" />
 

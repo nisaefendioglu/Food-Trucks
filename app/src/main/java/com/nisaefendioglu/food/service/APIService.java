@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 
 public interface APIService {
 
-    @GET("json/v1/1/search.php?f=a")
+    @GET("json/v1/1/search.php?f=c")
     Call<Meals> getMenu();
 }
