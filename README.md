@@ -1,6 +1,8 @@
 # Food-Trucks
-
 #### A mobile application that allows reading recipes prepared using the api on https://themealdb.com/ or watching them on youtube. 
+<br>
+<img width="375" alt="Screen Shot 2022-01-09 at 17 12 03" src="https://user-images.githubusercontent.com/48391281/156424048-514b984e-63e3-4bc5-a0e0-a6d7cc57dd64.png">
+
 <br>
 Screenshots of the app :
 <br><br>
